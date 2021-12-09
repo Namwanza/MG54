@@ -27,5 +27,5 @@ The following are the steps to run this application on your local machine
 
 5. ### start the application
    ``ng serve``
-On your browser, past this in the url to see the application running
-   `http://localhost:4200/`
+
+On your browser, past this in the url to see the application running `http://localhost:4200/`
