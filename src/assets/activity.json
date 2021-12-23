@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Test 4",
+        "date": "04/02/2022",
+        "time": "10:30 am", 
+        "imageUrl": "https://www.fillmurray.com/640/360",
+        "location": {
+          "address": "Independence Avenue",
+          "city": "Windhoek",
+          "country": "Namibia"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Test 5",
+        "date": "05/02/2022",
+        "time": "11:30 am", 
+        "imageUrl": "https://www.fillmurray.com/640/360",
+        "location": {
+          "address": "Independence Avenue",
+          "city": "Windhoek",
+          "country": "Namibia"
+        }
+    }
+  ]
+

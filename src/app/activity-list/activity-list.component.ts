@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Activity } from '../activity';
+import { ActivityService } from '../activity.service';
 
 @Component({
   selector: 'activity-list',
@@ -6,22 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activity-list.component.css']
 })
 export class ActivityListComponent implements OnInit {
-  activity1 = {
-    id: 1,
-    name: 'Databases Test 4',
-    date: '17/02/2022',
-    time: '11:30 am', 
-    imageUrl: '',
-    location: {
-      address: 'Independence Avenue',
-      city: 'Windhoek',
-      country: 'Namibia'
-    }
-  }
+  activity1: Activity[] | undefined;
 
-  constructor() { }
+  constructor(private _activityService: ActivityService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this._activityService.getActivity().subscribe(response => this.activity1 = this.activity1);
+    // this._activityService.getActivity().subscribe(response => this.activity1 = response);
   }
 
   handleActivityClick(data: string): void{

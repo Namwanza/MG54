@@ -1,6 +1,10 @@
 <div>
     <h1>Upcoming Activities</h1>
     <hr/>
-    <activity-thumbnail (actClick)="handleActivityClick($event)" 
-        [activity]="activity1"></activity-thumbnail>
+    <ul>
+        <li *ngFor="let act of activity1"><a routerLink="/activity/{{act.id}}" routerLinkActive="active"></a>>
+        <activity-thumbnail (actClick)="handleActivityClick($event)" 
+            [activity]="activity1"></activity-thumbnail>
+        </li>
+    </ul>
 </div>
