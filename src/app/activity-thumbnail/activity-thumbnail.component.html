@@ -1,0 +1,13 @@
+<div>
+    <h2>{{activity.name}}</h2>
+    <div>Date: {{activity.date}}</div>
+    <div>Time: {{activity.time}}</div>
+    <div>Name: {{activity.name}}</div>
+    <div>
+        <span>Location: {{activity.location.address}}</span>
+        <span>&nbsp;</span>
+        <span>{{activity.location.city}}, {{activity.location.country}}</span>
+    </div>
+    <button class="btn btn-primary" (click)="handleClickMe()">Click Me!</button>
+</div>
+
